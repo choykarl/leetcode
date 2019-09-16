@@ -8,6 +8,8 @@
 
 import Foundation
 
+EvaluateReversePolishNotation.execute()
+
 LinkedList<String>.execute()
 
 TwoSum.execute()

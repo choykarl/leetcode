@@ -10,7 +10,7 @@
 
 import Foundation
 
-class TwoSum: NSObject {
+class TwoSum: LeetCode {
     // 从数组中找到两个值相加等于target的索引.
     let array = [1, 3, 5, 12, 11, 9, 8]
     let target = 11
