@@ -31,24 +31,29 @@ class ListNode {
 }
 
 class MergeTwoSortedLists: LeetCode {
+    
+    /*
+     因为是两个有序链表,所以每次都判断链表的第一个节点,取出值较小的拼在head这个链表后面,然后将这第一个节点删除.
+     (将这个节点指向这个节点的下一个节点,就相当于删除这个节点).
+     */
     func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         if l1 == nil && l2 == nil { return nil }
         if l1 == nil { return l2 }
         if l2 == nil { return l1 }
         
-        var rtnNode: ListNode?
-        var tmpNode: ListNode?
-        
-        func setValue(n: inout ListNode?) {
-            if rtnNode != nil {
-                tmpNode?.next = n
-                tmpNode = tmpNode?.next
+        var head: ListNode?
+        var next: ListNode?
+        func setValue(node: inout ListNode?) {
+            if head != nil {
+                next?.next = node
+                next = next?.next
             } else {
-                tmpNode = n
-                rtnNode = tmpNode
+                next = node
+                head = next
             }
             
-            n = n?.next
+            // 将当前节点指向当前节点的下一个节点,相当于删除当前节点.
+            node = node?.next
         }
         
         var tmpL1: ListNode? = l1
@@ -57,22 +62,22 @@ class MergeTwoSortedLists: LeetCode {
         while true {
             if let v1 = tmpL1?.val, let v2 = tmpL2?.val {
                 if v1 <= v2 {
-                    setValue(n: &tmpL1)
+                    setValue(node: &tmpL1)
                 } else {
-                    setValue(n: &tmpL2)
+                    setValue(node: &tmpL2)
                 }
-            } else if let _ = tmpL1 {
-                tmpNode?.next = tmpL1
+            } else if let _ = tmpL1 { // 只有tmpL1有值了,直接将tmpL1剩下的拼在后面
+                next?.next = tmpL1
                 break
-            } else if let _ = tmpL2 {
-                tmpNode?.next = tmpL2
+            } else if let _ = tmpL2 {  // 只有tmpL2有值了,直接将tmpL2剩下的拼在后面
+                next?.next = tmpL2
                 break
             } else {
                 break
             }
         }
         
-        return rtnNode
+        return head
     }
     
     static func execute() {
