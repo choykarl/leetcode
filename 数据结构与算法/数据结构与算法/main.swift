@@ -8,11 +8,12 @@
 
 import Foundation
 
-EvaluateReversePolishNotation.execute()
+//EvaluateReversePolishNotation.execute()
+//
+//LinkedList<String>.execute()
+//
+//TwoSum.execute()
+//
+//FibonacciNumber.execute()
 
-LinkedList<String>.execute()
-
-TwoSum.execute()
-
-FibonacciNumber.execute()
-
+MergeTwoSortedLists.execute()
