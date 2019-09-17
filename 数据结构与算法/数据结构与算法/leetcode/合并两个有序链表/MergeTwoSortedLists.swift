@@ -80,6 +80,39 @@ class MergeTwoSortedLists: LeetCode {
         return head
     }
     
+    // 递归形式
+    func mergeTwoLists2(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        if l1 == nil && l2 == nil { return nil }
+        if l1 == nil { return l2 }
+        if l2 == nil { return l1 }
+        
+        var head: ListNode?
+        if l1!.val < l2!.val {
+            head = l1
+            head?.next = mergeTwoLists2(head?.next, l2)
+        } else {
+            head = l2
+            head?.next = mergeTwoLists2(l1, head?.next)
+        }
+        
+        return head
+    }
+    
+    // 思路同`mergeTwoLists2`,只是精简了代码
+    func mergeTwoLists3(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        if l1 == nil && l2 == nil { return nil }
+        if l1 == nil { return l2 }
+        if l2 == nil { return l1 }
+        
+        if l1!.val < l2!.val {
+            l1?.next = mergeTwoLists2(l1?.next, l2)
+            return l1
+        } else {
+            l2?.next = mergeTwoLists2(l1, l2?.next)
+            return l2
+        }
+    }
+    
     static func execute() {
         let a1 = ListNode(1)
         a1.next = ListNode(3)
@@ -96,7 +129,7 @@ class MergeTwoSortedLists: LeetCode {
         
         
         let ins = MergeTwoSortedLists()
-        if let node = ins.mergeTwoLists(a1, a2) {
+        if let node = ins.mergeTwoLists3(a1, a2) {
             print(node.log())
         }
     }

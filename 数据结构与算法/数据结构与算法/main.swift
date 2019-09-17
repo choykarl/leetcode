@@ -14,6 +14,6 @@ import Foundation
 //
 //TwoSum.execute()
 //
-FibonacciNumber.execute()
+//FibonacciNumber.execute()
 
-//MergeTwoSortedLists.execute()
+MergeTwoSortedLists.execute()
