@@ -17,6 +17,17 @@ class ListNode {
         self.val = val
         self.next = nil
     }
+    
+    func log() -> String {
+        var s = ""
+        var tmp: ListNode? = self
+        
+        while let v = tmp?.val {
+            s.append("\(v)-")
+            tmp = tmp?.next
+        }
+        return s
+    }
 }
 
 class MergeTwoSortedLists: LeetCode {
@@ -80,16 +91,8 @@ class MergeTwoSortedLists: LeetCode {
         
         
         let ins = MergeTwoSortedLists()
-        let node = ins.mergeTwoLists(a1, a2)
-        
-        var s = ""
-        var tmp: ListNode? = node
-        
-        while let v = tmp?.val {
-            s.append("\(v)-")
-            tmp = tmp?.next
+        if let node = ins.mergeTwoLists(a1, a2) {
+            print(node.log())
         }
-        
-        print(s)
     }
 }
