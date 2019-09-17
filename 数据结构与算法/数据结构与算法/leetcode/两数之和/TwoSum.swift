@@ -15,6 +15,9 @@ class TwoSum: LeetCode {
     let array = [1, 3, 5, 12, 11, 9, 8]
     let target = 11
     
+    // 用字典(哈希表)的方式效率搞一点
+    // 每次遍历出来的值都用target去减一下,得到一个差,然后从字典里去找这个差,如果找到就直接将当前遍历的索引和从字典里找到的差的索引返回
+    // 如果没有找到,就将当前遍历的值当作key,索引当作value存到字典里.
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var dict = [Int: Int]()
         for (i, num) in nums.enumerated() {

@@ -11,7 +11,7 @@
 import Foundation
 
 class EvaluateReversePolishNotation: LeetCode {
-    
+    // 用一个数组存放所有数字,然后每碰到一个运算符,就将数组里的最后两个元素出栈,然后用运算符计算,得到的结果在放在数组里.
     func evalRPN(_ tokens: [String]) -> Int {
         var stack = [Int]()
         for value in tokens {
