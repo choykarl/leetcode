@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		722D01BD2331184F0036A55E /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D01BC2331184F0036A55E /* MergeTwoSortedLists.swift */; };
+		722D01C12331CEB40036A55E /* DeleteNodeInALinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D01C02331CEB40036A55E /* DeleteNodeInALinkedList.swift */; };
 		CB16D0ED22D246C400997428 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB16D0EC22D246C400997428 /* main.swift */; };
 		CB16D10C22D4F6E800997428 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB16D10B22D4F6E800997428 /* LinkedList.swift */; };
 		CBC32426232FE81A005D64D6 /* FibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC32425232FE81A005D64D6 /* FibonacciNumber.swift */; };
@@ -30,13 +31,14 @@
 
 /* Begin PBXFileReference section */
 		722D01BC2331184F0036A55E /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
+		722D01C02331CEB40036A55E /* DeleteNodeInALinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNodeInALinkedList.swift; sourceTree = "<group>"; };
 		CB16D0E922D246C400997428 /* 数据结构与算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "数据结构与算法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB16D0EC22D246C400997428 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CB16D10B22D4F6E800997428 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		CBC32425232FE81A005D64D6 /* FibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciNumber.swift; sourceTree = "<group>"; };
 		CBC32428232FE8A7005D64D6 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		CBC3242B232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateReversePolishNotation.swift; sourceTree = "<group>"; };
-		CBC3242D232FECC4005D64D6 /* LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode.swift; sourceTree = "<group>"; };
+		CBC3242D232FECC4005D64D6 /* LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeetCode.swift; path = leetcode/LeetCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,14 @@
 				722D01BC2331184F0036A55E /* MergeTwoSortedLists.swift */,
 			);
 			path = "合并两个有序链表";
+			sourceTree = "<group>";
+		};
+		722D01BF2331CE8A0036A55E /* 删除链表中的节点 */ = {
+			isa = PBXGroup;
+			children = (
+				722D01C02331CEB40036A55E /* DeleteNodeInALinkedList.swift */,
+			);
+			path = "删除链表中的节点";
 			sourceTree = "<group>";
 		};
 		CB16D0E022D246C400997428 = {
@@ -80,6 +90,7 @@
 				CB16D0EC22D246C400997428 /* main.swift */,
 				CBC32421232FE741005D64D6 /* dataStructure */,
 				CBC32420232FE719005D64D6 /* leetcode */,
+				CBC3242D232FECC4005D64D6 /* LeetCode.swift */,
 			);
 			path = "数据结构与算法";
 			sourceTree = "<group>";
@@ -95,7 +106,7 @@
 		CBC32420232FE719005D64D6 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
-				CBC3242D232FECC4005D64D6 /* LeetCode.swift */,
+				722D01BF2331CE8A0036A55E /* 删除链表中的节点 */,
 				722D01BB233118250036A55E /* 合并两个有序链表 */,
 				CBC3242A232FEC43005D64D6 /* 逆波兰表达式 */,
 				CBC32427232FE886005D64D6 /* 两数之和 */,
@@ -198,6 +209,7 @@
 				CB16D10C22D4F6E800997428 /* LinkedList.swift in Sources */,
 				CBC3242E232FECC4005D64D6 /* LeetCode.swift in Sources */,
 				CB16D0ED22D246C400997428 /* main.swift in Sources */,
+				722D01C12331CEB40036A55E /* DeleteNodeInALinkedList.swift in Sources */,
 				CBC32429232FE8A7005D64D6 /* TwoSum.swift in Sources */,
 				722D01BD2331184F0036A55E /* MergeTwoSortedLists.swift in Sources */,
 				CBC32426232FE81A005D64D6 /* FibonacciNumber.swift in Sources */,

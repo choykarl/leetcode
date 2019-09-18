@@ -15,15 +15,17 @@ class ListNode {
     public var next: ListNode?
     public init(_ val: Int) {
         self.val = val
-        self.next = nil
     }
     
     func log() -> String {
         var s = ""
         var tmp: ListNode? = self
-        
         while let v = tmp?.val {
-            s.append("\(v)-")
+            if tmp?.next != nil {
+                s.append("\(v)-")
+            } else {
+                s.append("\(v)")
+            }
             tmp = tmp?.next
         }
         return s
