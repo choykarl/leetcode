@@ -115,6 +115,38 @@ class MergeTwoSortedLists: LeetCode {
         }
     }
     
+    // 思路同`mergeTwoLists`,但是使用虚拟头节点可以精简点代码
+    func mergeTwoList4(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        if l1 == nil && l2 == nil { return nil }
+        if l1 == nil { return l2 }
+        if l2 == nil { return l1 }
+        
+        let head = ListNode(0)
+        var next: ListNode? = head
+        
+        var tmpL1: ListNode? = l1
+        var tmpL2: ListNode? = l2
+        
+        while tmpL1 != nil && tmpL2 != nil {
+            if tmpL1!.val <= tmpL2!.val {
+                next?.next = tmpL1
+                next = next?.next
+                tmpL1 = tmpL1?.next
+            } else {
+                next?.next = tmpL2
+                next = next?.next
+                tmpL2 = tmpL2?.next
+            }
+        }
+         if let _ = tmpL1 {
+            next?.next = tmpL1
+        } else if let _ = tmpL2 {
+            next?.next = tmpL2
+        }
+        
+        return head.next
+    }
+    
     static func execute() {
         let a1 = ListNode(1)
         a1.next = ListNode(3)
@@ -131,7 +163,7 @@ class MergeTwoSortedLists: LeetCode {
         
         
         let ins = MergeTwoSortedLists()
-        if let node = ins.mergeTwoLists3(a1, a2) {
+        if let node = ins.mergeTwoList4(a1, a2) {
             print(node.log())
         }
     }

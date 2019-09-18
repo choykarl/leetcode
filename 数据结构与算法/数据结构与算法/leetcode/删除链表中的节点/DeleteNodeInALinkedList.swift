@@ -6,6 +6,8 @@
 //  Copyright © 2019 karl. All rights reserved.
 //
 
+// https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
+
 import Foundation
 
 class DeleteNodeInALinkedList: LeetCode {
