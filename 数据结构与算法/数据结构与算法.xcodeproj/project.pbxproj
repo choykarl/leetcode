@@ -16,6 +16,7 @@
 		CBC32429232FE8A7005D64D6 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC32428232FE8A7005D64D6 /* TwoSum.swift */; };
 		CBC3242C232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3242B232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift */; };
 		CBC3242E232FECC4005D64D6 /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3242D232FECC4005D64D6 /* LeetCode.swift */; };
+		CBC324322333E436005D64D6 /* RemoveLinkedListElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC324312333E436005D64D6 /* RemoveLinkedListElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		CBC32428232FE8A7005D64D6 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		CBC3242B232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateReversePolishNotation.swift; sourceTree = "<group>"; };
 		CBC3242D232FECC4005D64D6 /* LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeetCode.swift; path = leetcode/LeetCode.swift; sourceTree = "<group>"; };
+		CBC324312333E436005D64D6 /* RemoveLinkedListElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveLinkedListElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		CBC32420232FE719005D64D6 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				CBC324302333E40D005D64D6 /* 移除链表元素 */,
 				729EBD63233230E60078770D /* 反转链表 */,
 				722D01BF2331CE8A0036A55E /* 删除链表中的节点 */,
 				722D01BB233118250036A55E /* 合并两个有序链表 */,
@@ -156,6 +159,14 @@
 				CBC3242B232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift */,
 			);
 			path = "逆波兰表达式";
+			sourceTree = "<group>";
+		};
+		CBC324302333E40D005D64D6 /* 移除链表元素 */ = {
+			isa = PBXGroup;
+			children = (
+				CBC324312333E436005D64D6 /* RemoveLinkedListElements.swift */,
+			);
+			path = "移除链表元素";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +232,7 @@
 				CB16D10C22D4F6E800997428 /* LinkedList.swift in Sources */,
 				CBC3242E232FECC4005D64D6 /* LeetCode.swift in Sources */,
 				CB16D0ED22D246C400997428 /* main.swift in Sources */,
+				CBC324322333E436005D64D6 /* RemoveLinkedListElements.swift in Sources */,
 				722D01C12331CEB40036A55E /* DeleteNodeInALinkedList.swift in Sources */,
 				CBC32429232FE8A7005D64D6 /* TwoSum.swift in Sources */,
 				722D01BD2331184F0036A55E /* MergeTwoSortedLists.swift in Sources */,

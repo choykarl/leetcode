@@ -20,4 +20,6 @@ import Foundation
 
 //DeleteNodeInALinkedList.execute()
 
-ReverseLinkedList.execute()
+//ReverseLinkedList.execute()
+
+RemoveLinkedListElements.execute()
