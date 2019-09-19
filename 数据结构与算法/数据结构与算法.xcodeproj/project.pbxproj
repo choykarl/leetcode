@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		722D01BD2331184F0036A55E /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D01BC2331184F0036A55E /* MergeTwoSortedLists.swift */; };
 		722D01C12331CEB40036A55E /* DeleteNodeInALinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D01C02331CEB40036A55E /* DeleteNodeInALinkedList.swift */; };
+		729EBD65233231300078770D /* ReverseLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729EBD64233231300078770D /* ReverseLinkedList.swift */; };
 		CB16D0ED22D246C400997428 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB16D0EC22D246C400997428 /* main.swift */; };
 		CB16D10C22D4F6E800997428 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB16D10B22D4F6E800997428 /* LinkedList.swift */; };
 		CBC32426232FE81A005D64D6 /* FibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC32425232FE81A005D64D6 /* FibonacciNumber.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		722D01BC2331184F0036A55E /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
 		722D01C02331CEB40036A55E /* DeleteNodeInALinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNodeInALinkedList.swift; sourceTree = "<group>"; };
+		729EBD64233231300078770D /* ReverseLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseLinkedList.swift; sourceTree = "<group>"; };
 		CB16D0E922D246C400997428 /* 数据结构与算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "数据结构与算法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB16D0EC22D246C400997428 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CB16D10B22D4F6E800997428 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 				722D01C02331CEB40036A55E /* DeleteNodeInALinkedList.swift */,
 			);
 			path = "删除链表中的节点";
+			sourceTree = "<group>";
+		};
+		729EBD63233230E60078770D /* 反转链表 */ = {
+			isa = PBXGroup;
+			children = (
+				729EBD64233231300078770D /* ReverseLinkedList.swift */,
+			);
+			path = "反转链表";
 			sourceTree = "<group>";
 		};
 		CB16D0E022D246C400997428 = {
@@ -106,6 +116,7 @@
 		CBC32420232FE719005D64D6 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				729EBD63233230E60078770D /* 反转链表 */,
 				722D01BF2331CE8A0036A55E /* 删除链表中的节点 */,
 				722D01BB233118250036A55E /* 合并两个有序链表 */,
 				CBC3242A232FEC43005D64D6 /* 逆波兰表达式 */,
@@ -205,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729EBD65233231300078770D /* ReverseLinkedList.swift in Sources */,
 				CBC3242C232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift in Sources */,
 				CB16D10C22D4F6E800997428 /* LinkedList.swift in Sources */,
 				CBC3242E232FECC4005D64D6 /* LeetCode.swift in Sources */,
