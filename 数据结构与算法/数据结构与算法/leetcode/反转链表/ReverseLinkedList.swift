@@ -6,6 +6,7 @@
 //  Copyright © 2019 karl. All rights reserved.
 //
 
+// https://leetcode-cn.com/problems/reverse-linked-list/
 import Foundation
 
 class ReverseLinkedList: LeetCode {

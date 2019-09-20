@@ -22,4 +22,8 @@ import Foundation
 
 //ReverseLinkedList.execute()
 
+//InkedListCycle.execute()
+
 RemoveLinkedListElements.execute()
+
+
