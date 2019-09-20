@@ -35,6 +35,35 @@ class RemoveLinkedListElements: LeetCode {
         
         return head
     }
+
+    // 性能比上一个方法好
+    func removeElements2(_ head: ListNode?, _ val: Int) -> ListNode? {
+
+        var tmpNode = head
+        var preNode = head
+        while tmpNode != nil {
+            if tmpNode?.val == val { // 判断当前节点是够满足条件,满足条件的话就将上一个节点的next指向当前节点的next,
+                preNode?.next = tmpNode?.next
+            } else { // 只有不满足条件的时候,上一个节点才会改变,这样才能处理有连续符合条件的节点.
+                preNode = tmpNode
+            }
+            // 当前节点往后走
+            tmpNode = tmpNode?.next
+        }
+
+        // 上面的循环是处理不了第一个节点的
+        // 判断第一个节点是否符合条件
+        if (head?.val == val) {
+            if (head?.next != nil) { // 第一个节点符合条件,并且下一个不为nil,直接将第一个节点替换成下一个节点
+                head?.val = head!.next!.val
+                head?.next = head?.next?.next
+            } else { // 第一个节点的下一个为nil,这表示当前只有一个头结点了,头节点有符合过滤条件,所以直接返回nil就可以了
+                return nil
+            }
+        }
+
+        return head
+    }
     
     static func execute() {
         let node = ListNode(3)

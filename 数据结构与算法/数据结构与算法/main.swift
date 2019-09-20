@@ -25,5 +25,3 @@ import Foundation
 //InkedListCycle.execute()
 
 RemoveLinkedListElements.execute()
-
-
