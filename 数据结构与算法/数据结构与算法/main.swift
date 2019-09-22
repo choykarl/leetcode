@@ -24,4 +24,6 @@ import Foundation
 
 //InkedListCycle.execute()
 
-RemoveLinkedListElements.execute()
+//RemoveLinkedListElements.execute()
+
+MergeKSortedLists.execute()
