@@ -21,43 +21,36 @@ class MergeKSortedLists: LeetCode {
         
         var array = lists
         
-        var value: Int?
-        var minIndex = -1
-        
         let head = ListNode(0)
         var tmpNode: ListNode? = head
         
-        
-        var canBreak = 0
+        var count = 0
         while true {
-            for i in 0 ..< array.count {
-                let node = array[i]
-                if node != nil {
-                    if value == nil || node!.val <= value! {
-                        value = node!.val
-                        minIndex = i
-                    }
-                } else {
-                    canBreak += 1
+            
+            var minIndex = -1
+            for i in 0 ..< array.count { // 找出数组中最小的索引
+                count += 1
+                guard let node = array[i] else {
+                    continue
                 }
                 
-                if i == array.count - 1 {
-                    if minIndex != -1 {
-                        tmpNode?.next = array[minIndex]
-                        tmpNode = array[minIndex]
-                        array[minIndex] = array[minIndex]?.next
-                        minIndex = -1
-                        value = nil
-                        canBreak = 0
-                    }
+                if minIndex == -1 || node.val <= array[minIndex]!.val {
+                    minIndex = i
                 }
             }
             
-            if canBreak == array.count {
+            if minIndex == -1 {
                 break
             }
+            
+            // 串起来
+            tmpNode?.next = array[minIndex]
+            tmpNode = array[minIndex]
+            
+            // 将当前找到的索引位置的节点指向下一个
+            array[minIndex] = array[minIndex]?.next
         }
-        
+        print("count = ", count)
         return head.next
     }
     
@@ -65,15 +58,6 @@ class MergeKSortedLists: LeetCode {
         
         
         let array = [node1(), node2(), node3()]
-        
-
-        
-        
-        
-//        for items in caseArray {
-//
-//        }
-        
         
         let ins = MergeKSortedLists()
 //        let res = ins.mergeKLists(array)
@@ -89,7 +73,7 @@ class MergeKSortedLists: LeetCode {
                             nodeArray.append(node)
                             count += 1
                         }
-//                        if count == 3000 {
+//                        if count == 1000 {
 //                            break
 //                        }
                     }
