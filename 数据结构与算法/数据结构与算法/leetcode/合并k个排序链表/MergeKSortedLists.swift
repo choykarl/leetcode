@@ -5,11 +5,85 @@
 //  Created by 蔡浩浩 on 2019/9/21.
 //  Copyright © 2019 karl. All rights reserved.
 //
+// https://leetcode-cn.com/problems/merge-k-sorted-lists/
 
 import Foundation
 
 class MergeKSortedLists: LeetCode {
     
+    // 将所有元素添加到一个数组里,然后排序,在拼接起来
+    func mergeKLists3(_ lists: [ListNode?]) -> ListNode? {
+        var array = [ListNode]()
+        for var list in lists {
+            while let node = list {
+                array.append(node)
+                list = node.next
+            }
+        }
+        
+        if array.count == 0 {
+            return nil
+        }
+        
+        if array.count == 1 {
+            return array[0]
+        }
+        
+        array.sort { (node1, node2) -> Bool in
+            return node1.val < node2.val
+        }
+        
+        let head = ListNode(0)
+        var tmp = head
+        head.next = tmp
+        for node in array {
+            tmp.next = node
+            tmp = node
+        }
+        return head.next
+    }
+    
+    // 分治策略(从复杂度算出的值来看效率最好,但是在leetcode上没有mergeKLists3效率高)
+    // 每次先合并相邻的两个1和2,3和4,5和6这样先合并,合并的结果覆盖之前的1,3,5
+    func mergeKLists2(_ lists: [ListNode?]) -> ListNode? {
+        if lists.count == 0 {
+            return nil
+        }
+        
+        if lists.count == 1 {
+            return lists[0]
+        }
+        
+        var array = lists
+        
+        let merge2listIns = MergeTwoSortedLists()
+        
+        // 算出总共有几轮
+        // 每一轮都是上一轮的一半
+        var count = lists.count
+        var rotateCount = 0
+        while true {
+            count = Int(ceil(Double(count) / 2))
+            rotateCount += 1
+            if count <= 1 {
+                break
+            }
+        }
+        
+        var step = 1
+        (1 ... rotateCount).forEach { (rotate) in
+            var i = 0
+            while i + step < array.count { // 每一轮合并相邻的两个,覆盖掉原先的值
+                array[i] = merge2listIns.mergeTwoList4(array[i], array[i + step])
+                i += 1 << rotate
+            }
+            step = 1 << rotate
+        }
+        
+        return array[0]
+    }
+    
+    //
     func mergeKLists(_ lists: [ListNode?]) -> ListNode? {
         if lists.count == 0 {
             return nil
@@ -56,34 +130,41 @@ class MergeKSortedLists: LeetCode {
     
     static func execute() {
         
-        
-        let array = [node1(), node2(), node3()]
-        
-        let ins = MergeKSortedLists()
+        execute2()
+//        return
+//        let array = [node1(), node2(), node3()]
+//        let ins = MergeKSortedLists()
 //        let res = ins.mergeKLists(array)
+//        print(res?.log() ?? "")
+    }
+    
+    static func execute2() {
         
         var count = 0
-        if let data = try? Data(contentsOf: URL(fileURLWithPath: "/Users/caihaohao/Desktop/test.json")) {
-            if let dict = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String: [[Int]]] {
-                if let items = dict["caseArray"] {
-                    var nodeArray = [ListNode]()
-                    for ints in items {
-                        for int in ints {
-                            let node = ListNode(int)
-                            nodeArray.append(node)
-                            count += 1
-                        }
-//                        if count == 1000 {
-//                            break
-//                        }
-                    }
-                    let res = ins.mergeKLists(nodeArray)
-                    print(res?.log() ?? "")
-                }
-            }
+        guard let data = try? Data(contentsOf: URL(fileURLWithPath: "/Users/caihaohao/Desktop/test.json")) else {
+            return
         }
-        
-//        print(res?.log() ?? "")
+        guard let dict = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String: [[Int]]] else {
+            return
+        }
+        guard let items = dict["caseArray"] else {
+            return
+        }
+        var nodeArray = [ListNode]()
+        for ints in items {
+            for int in ints {
+                let node = ListNode(int)
+                nodeArray.append(node)
+                count += 1
+            }
+//            if count == 11 {
+//                break
+//            }
+        }
+        let ins = MergeKSortedLists()
+        let res = ins.mergeKLists2(nodeArray)
+        print(res?.log() ?? "")
+            
     }
     
     static func node1() -> ListNode {
