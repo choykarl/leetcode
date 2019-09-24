@@ -9,11 +9,11 @@
 import Foundation
 
 //EvaluateReversePolishNotation.execute()
-//
+
 //LinkedList<String>.execute()
-//
+
 //TwoSum.execute()
-//
+
 //FibonacciNumber.execute()
 
 //MergeTwoSortedLists.execute()
@@ -26,4 +26,6 @@ import Foundation
 
 //RemoveLinkedListElements.execute()
 
-MergeKSortedLists.execute()
+//MergeKSortedLists.execute()
+
+RemoveDuplicatesFromSortedList.execute()

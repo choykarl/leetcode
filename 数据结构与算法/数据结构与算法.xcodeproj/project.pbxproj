@@ -14,6 +14,7 @@
 		729EBD682333709F0078770D /* InkedListCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729EBD672333709F0078770D /* InkedListCycle.swift */; };
 		CB16D0ED22D246C400997428 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB16D0EC22D246C400997428 /* main.swift */; };
 		CB16D10C22D4F6E800997428 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB16D10B22D4F6E800997428 /* LinkedList.swift */; };
+		CB2C0BC3233A7BFA00A79B45 /* RemoveDuplicatesFromSortedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C0BC2233A7BFA00A79B45 /* RemoveDuplicatesFromSortedList.swift */; };
 		CBC32426232FE81A005D64D6 /* FibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC32425232FE81A005D64D6 /* FibonacciNumber.swift */; };
 		CBC32429232FE8A7005D64D6 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC32428232FE8A7005D64D6 /* TwoSum.swift */; };
 		CBC3242C232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3242B232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift */; };
@@ -42,6 +43,7 @@
 		CB16D0E922D246C400997428 /* 数据结构与算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "数据结构与算法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB16D0EC22D246C400997428 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CB16D10B22D4F6E800997428 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		CB2C0BC2233A7BFA00A79B45 /* RemoveDuplicatesFromSortedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedList.swift; sourceTree = "<group>"; };
 		CBC32425232FE81A005D64D6 /* FibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciNumber.swift; sourceTree = "<group>"; };
 		CBC32428232FE8A7005D64D6 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		CBC3242B232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateReversePolishNotation.swift; sourceTree = "<group>"; };
@@ -135,9 +137,18 @@
 			path = "链表";
 			sourceTree = "<group>";
 		};
+		CB2C0BC1233A7BD100A79B45 /* 删除排序链表中的重复元素 */ = {
+			isa = PBXGroup;
+			children = (
+				CB2C0BC2233A7BFA00A79B45 /* RemoveDuplicatesFromSortedList.swift */,
+			);
+			path = "删除排序链表中的重复元素";
+			sourceTree = "<group>";
+		};
 		CBC32420232FE719005D64D6 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				CB2C0BC1233A7BD100A79B45 /* 删除排序链表中的重复元素 */,
 				725B7FBD2336197C0065A269 /* 合并k个排序链表 */,
 				CBC324302333E40D005D64D6 /* 移除链表元素 */,
 				729EBD66233370870078770D /* 环形链表 */,
@@ -256,6 +267,7 @@
 				CB16D0ED22D246C400997428 /* main.swift in Sources */,
 				CBC324322333E436005D64D6 /* RemoveLinkedListElements.swift in Sources */,
 				722D01C12331CEB40036A55E /* DeleteNodeInALinkedList.swift in Sources */,
+				CB2C0BC3233A7BFA00A79B45 /* RemoveDuplicatesFromSortedList.swift in Sources */,
 				CBC32429232FE8A7005D64D6 /* TwoSum.swift in Sources */,
 				722D01BD2331184F0036A55E /* MergeTwoSortedLists.swift in Sources */,
 				725B7FBF233619AF0065A269 /* MergeKSortedLists.swift in Sources */,
