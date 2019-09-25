@@ -83,6 +83,34 @@ class MergeKSortedLists: LeetCode {
         return array[0]
     }
     
+    // 优化mergeKLists2
+    func mergeKLists2_2(_ lists: [ListNode?]) -> ListNode? {
+        if lists.count == 0 {
+            return nil
+        }
+        
+        if lists.count == 1 {
+            return lists[0]
+        }
+        
+        var array = lists
+        
+        let merge2listIns = MergeTwoSortedLists()
+        
+        var step = 1
+        while step < array.count {
+            var i = 0
+            let nextStep = step * 2
+            while i + step < array.count { // 每一轮合并相邻的两个,覆盖掉原先的值
+                array[i] = merge2listIns.mergeTwoList4(array[i], array[i + step])
+                i += nextStep
+            }
+            step = nextStep
+        }
+        
+        return array[0]
+    }
+    
     //
     func mergeKLists(_ lists: [ListNode?]) -> ListNode? {
         if lists.count == 0 {
@@ -162,7 +190,7 @@ class MergeKSortedLists: LeetCode {
 //            }
         }
         let ins = MergeKSortedLists()
-        let res = ins.mergeKLists2(nodeArray)
+        let res = ins.mergeKLists2_2(nodeArray)
         print(res?.log() ?? "")
             
     }
