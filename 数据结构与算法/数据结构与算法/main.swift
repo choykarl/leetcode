@@ -30,4 +30,6 @@ import Foundation
 
 //RemoveDuplicatesFromSortedList.execute()
 
-RemoveDuplicatesFromSortedList2.execute()
+//RemoveDuplicatesFromSortedList2.execute()
+
+MiddleOfTheLinkedList.execute()
