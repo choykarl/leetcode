@@ -157,13 +157,10 @@ class MergeKSortedLists: LeetCode {
     }
     
     static func execute() {
-        
-        execute2()
-//        return
-//        let array = [node1(), node2(), node3()]
-//        let ins = MergeKSortedLists()
-//        let res = ins.mergeKLists(array)
-//        print(res?.log() ?? "")
+        let array = [node1(), node2(), node3()]
+        let ins = MergeKSortedLists()
+        let res = ins.mergeKLists(array)
+        print(res?.log() ?? "")
     }
     
     static func execute2() {

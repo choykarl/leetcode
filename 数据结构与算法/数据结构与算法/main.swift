@@ -28,4 +28,6 @@ import Foundation
 
 //MergeKSortedLists.execute()
 
-RemoveDuplicatesFromSortedList.execute()
+//RemoveDuplicatesFromSortedList.execute()
+
+RemoveDuplicatesFromSortedList2.execute()
