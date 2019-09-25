@@ -22,6 +22,10 @@
 		CBC3242C232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3242B232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift */; };
 		CBC3242E232FECC4005D64D6 /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3242D232FECC4005D64D6 /* LeetCode.swift */; };
 		CBC324322333E436005D64D6 /* RemoveLinkedListElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC324312333E436005D64D6 /* RemoveLinkedListElements.swift */; };
+		CBD15390233BC1CA0072319A /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1538F233BC1CA0072319A /* ListNode.swift */; };
+		CBD15393233BC20C0072319A /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15392233BC20C0072319A /* TreeNode.swift */; };
+		CBD15396233BC2CD0072319A /* ValidateBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15395233BC2CD0072319A /* ValidateBinarySearchTree.swift */; };
+		CBD15398233BCFEA0072319A /* Int?+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15397233BCFEA0072319A /* Int?+Operator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +57,10 @@
 		CBC3242B232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateReversePolishNotation.swift; sourceTree = "<group>"; };
 		CBC3242D232FECC4005D64D6 /* LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeetCode.swift; path = leetcode/LeetCode.swift; sourceTree = "<group>"; };
 		CBC324312333E436005D64D6 /* RemoveLinkedListElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveLinkedListElements.swift; sourceTree = "<group>"; };
+		CBD1538F233BC1CA0072319A /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		CBD15392233BC20C0072319A /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		CBD15395233BC2CD0072319A /* ValidateBinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateBinarySearchTree.swift; sourceTree = "<group>"; };
+		CBD15397233BCFEA0072319A /* Int?+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int?+Operator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				CB16D0EC22D246C400997428 /* main.swift */,
+				CBD15399233BD1210072319A /* Source */,
 				CBC32421232FE741005D64D6 /* dataStructure */,
 				CBC32420232FE719005D64D6 /* leetcode */,
 				CBC3242D232FECC4005D64D6 /* LeetCode.swift */,
@@ -153,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				CB16D10B22D4F6E800997428 /* LinkedList.swift */,
+				CBD1538F233BC1CA0072319A /* ListNode.swift */,
 			);
 			path = "链表";
 			sourceTree = "<group>";
@@ -168,6 +178,7 @@
 		CBC32420232FE719005D64D6 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				CBD15394233BC2A20072319A /* 验证二叉搜索树 */,
 				7270DEBF233B4BE500DEEF0C /* 链表的中间节点 */,
 				7270DEBC233B448000DEEF0C /* 删除排序链表中的重复元素② */,
 				CB2C0BC1233A7BD100A79B45 /* 删除排序链表中的重复元素 */,
@@ -187,6 +198,7 @@
 		CBC32421232FE741005D64D6 /* dataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				CBD15391233BC1F30072319A /* 二叉树 */,
 				CB16D10A22D4F6B900997428 /* 链表 */,
 			);
 			path = dataStructure;
@@ -222,6 +234,38 @@
 				CBC324312333E436005D64D6 /* RemoveLinkedListElements.swift */,
 			);
 			path = "移除链表元素";
+			sourceTree = "<group>";
+		};
+		CBD15391233BC1F30072319A /* 二叉树 */ = {
+			isa = PBXGroup;
+			children = (
+				CBD15392233BC20C0072319A /* TreeNode.swift */,
+			);
+			path = "二叉树";
+			sourceTree = "<group>";
+		};
+		CBD15394233BC2A20072319A /* 验证二叉搜索树 */ = {
+			isa = PBXGroup;
+			children = (
+				CBD15395233BC2CD0072319A /* ValidateBinarySearchTree.swift */,
+			);
+			path = "验证二叉搜索树";
+			sourceTree = "<group>";
+		};
+		CBD15399233BD1210072319A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1539A233BD1310072319A /* Extension */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CBD1539A233BD1310072319A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CBD15397233BCFEA0072319A /* Int?+Operator.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,18 +328,22 @@
 			files = (
 				729EBD65233231300078770D /* ReverseLinkedList.swift in Sources */,
 				7270DEBE233B44B000DEEF0C /* RemoveDuplicatesFromSortedList2.swift in Sources */,
+				CBD15393233BC20C0072319A /* TreeNode.swift in Sources */,
 				CBC3242C232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift in Sources */,
 				CB16D10C22D4F6E800997428 /* LinkedList.swift in Sources */,
 				CBC3242E232FECC4005D64D6 /* LeetCode.swift in Sources */,
 				CB16D0ED22D246C400997428 /* main.swift in Sources */,
 				CBC324322333E436005D64D6 /* RemoveLinkedListElements.swift in Sources */,
 				722D01C12331CEB40036A55E /* DeleteNodeInALinkedList.swift in Sources */,
+				CBD15398233BCFEA0072319A /* Int?+Operator.swift in Sources */,
 				CB2C0BC3233A7BFA00A79B45 /* RemoveDuplicatesFromSortedList.swift in Sources */,
 				CBC32429232FE8A7005D64D6 /* TwoSum.swift in Sources */,
 				7270DEC1233B4C1100DEEF0C /* MiddleOfTheLinkedList.swift in Sources */,
+				CBD15390233BC1CA0072319A /* ListNode.swift in Sources */,
 				722D01BD2331184F0036A55E /* MergeTwoSortedLists.swift in Sources */,
 				725B7FBF233619AF0065A269 /* MergeKSortedLists.swift in Sources */,
 				729EBD682333709F0078770D /* InkedListCycle.swift in Sources */,
+				CBD15396233BC2CD0072319A /* ValidateBinarySearchTree.swift in Sources */,
 				CBC32426232FE81A005D64D6 /* FibonacciNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

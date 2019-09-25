@@ -32,4 +32,6 @@ import Foundation
 
 //RemoveDuplicatesFromSortedList2.execute()
 
-MiddleOfTheLinkedList.execute()
+//MiddleOfTheLinkedList.execute()
+
+ValidateBinarySearchTree.execute()
