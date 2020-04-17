@@ -9,8 +9,27 @@
 import Foundation
 
 extension Optional where Wrapped == Int {
-
+    
+    static func < (l: Self, r: Self) -> Bool {
+        if l == nil && r == nil {
+            return false
+        }
+        
+        if l == nil {
+            return true
+        }
+        if r == nil {
+            return false
+        }
+        
+        return l! < r!
+    }
+    
     static func <= (l: Self, r: Self) -> Bool {
+        if l == nil && r == nil {
+            return true
+        }
+        
         if l == nil {
             return true
         }
@@ -19,5 +38,37 @@ extension Optional where Wrapped == Int {
         }
         
         return l! <= r!
+    }
+    
+    static func > (l: Self, r: Self) -> Bool {
+        if l == nil && r == nil {
+            return false
+        }
+        
+        if l == nil {
+            return false
+        }
+        
+        if r == nil {
+            return true
+        }
+        
+        return l! > r!
+    }
+    
+    static func >= (l: Self, r: Self) -> Bool {
+        if l == nil && r == nil {
+            return true
+        }
+        
+        if l == nil {
+            return false
+        }
+        
+        if r == nil {
+            return true
+        }
+        
+        return l! >= r!
     }
 }

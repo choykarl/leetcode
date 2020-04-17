@@ -13,8 +13,7 @@ import Foundation
 
 class ValidateBinarySearchTree: LeetCode {
     
-    var preValue: Int?
-    
+    private var superNode: TreeNode?
     func isValidBST(_ root: TreeNode?) -> Bool {
         if root == nil {
             return true
@@ -24,10 +23,15 @@ class ValidateBinarySearchTree: LeetCode {
             return false
         }
         
-        if preValue != nil && root!.val <= preValue! {
+        // s: 13
+        // r: 14
+        if superNode != nil && root!.val <= superNode!.val {
             return false
         }
-        preValue = root?.val
+        
+        // s: 14
+        // r: 14
+        superNode = root
         
         if isValidBST(root?.right) == false {
             return false
@@ -36,36 +40,53 @@ class ValidateBinarySearchTree: LeetCode {
         return true
     }
     
-//    func isValidBST2(_ root: TreeNode?) -> Bool {
-//        if root == nil {
-//            return true
-//        }
-//
-//        return checkNode(node: root, min: nil, max: nil)
-//    }
-//
-//    func checkNode(node: TreeNode?, min: Int?, max: Int?) -> Bool {
-//
-//        if node?.val <= min {
-//
-//        }
-//
-//        return checkNode(node: node?.left, min: node?.left?.left?.val, max: max)
-//
-//    }
+    static func logTree(node: TreeNode?) {
+        if node == nil {
+            return
+        }
+//        print("---------",node!.val)
+        logTree(node: node?.left)
+//        print(node!.val,"-------------")
+        
+        
+        
+        logTree(node: node?.right)
+        print(node!.val,"==========")
+        
+    }
     
     static func execute() {
         
-        let root = TreeNode(5)
-        root.left = TreeNode(1)
-        root.right = TreeNode(4)
-        root.right?.left = TreeNode(3)
-        root.right?.right = TreeNode(6)
+        let A = TreeNode(20)
+        let B = TreeNode(15)
+        let C = TreeNode(25)
+        let D = TreeNode(13)
+        let E = TreeNode(17)
+        let F = TreeNode(14)
+        let G = TreeNode(22)
+        let H = TreeNode(27)
+        let I = TreeNode(16)
         
+        A.left = B
+        A.right = C
         
+        B.left = D
+        B.right = E
+        
+        E.left = I
+        
+        D.right = F
+        
+        C.left = G
+        C.right = H
+
+
         let ins = ValidateBinarySearchTree()
-        let res = ins.isValidBST(root)
+        let res = ins.isValidBST(A)
         print(res)
+        
+        
+//        logTree(node: A)
     }
     
     

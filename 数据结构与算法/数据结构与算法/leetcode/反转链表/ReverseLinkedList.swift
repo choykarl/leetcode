@@ -81,6 +81,23 @@ class ReverseLinkedList: LeetCode {
         return tmpNode2
     }
     
+    func reverseList3(head: ListNode?) -> ListNode? {
+        if head == nil {return nil}
+        if head!.next == nil {
+            return head
+        }
+        var move = head
+        var pre: ListNode?
+        while move != nil {
+            let next = move?.next
+            move?.next = pre
+            pre = move
+            move = next
+        }
+        
+        return pre
+    }
+    
     static func execute() {
         let node = ListNode(1)
         let node1 = ListNode(3)
@@ -92,7 +109,8 @@ class ReverseLinkedList: LeetCode {
         node2.next = node3
         
         let ins = ReverseLinkedList()
-        let result = ins.reverseList2(node)
-        print(result?.log())
+//        let result = ins.reverseList2(node)
+        let result = ins.reverseList3(head: node)
+        print(result!.log())
     }
 }

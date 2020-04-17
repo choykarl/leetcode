@@ -35,3 +35,5 @@ import Foundation
 //MiddleOfTheLinkedList.execute()
 
 ValidateBinarySearchTree.execute()
+
+//PalindromeLinkedList.execute()

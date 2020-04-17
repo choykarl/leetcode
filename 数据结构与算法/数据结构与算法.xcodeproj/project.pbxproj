@@ -12,6 +12,7 @@
 		725B7FBF233619AF0065A269 /* MergeKSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725B7FBE233619AF0065A269 /* MergeKSortedLists.swift */; };
 		7270DEBE233B44B000DEEF0C /* RemoveDuplicatesFromSortedList2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7270DEBD233B44B000DEEF0C /* RemoveDuplicatesFromSortedList2.swift */; };
 		7270DEC1233B4C1100DEEF0C /* MiddleOfTheLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7270DEC0233B4C1100DEEF0C /* MiddleOfTheLinkedList.swift */; };
+		7275543A2448D56B00E3595A /* PalindromeLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727554392448D56B00E3595A /* PalindromeLinkedList.swift */; };
 		729EBD65233231300078770D /* ReverseLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729EBD64233231300078770D /* ReverseLinkedList.swift */; };
 		729EBD682333709F0078770D /* InkedListCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729EBD672333709F0078770D /* InkedListCycle.swift */; };
 		CB16D0ED22D246C400997428 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB16D0EC22D246C400997428 /* main.swift */; };
@@ -25,7 +26,6 @@
 		CBD15390233BC1CA0072319A /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1538F233BC1CA0072319A /* ListNode.swift */; };
 		CBD15393233BC20C0072319A /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15392233BC20C0072319A /* TreeNode.swift */; };
 		CBD15396233BC2CD0072319A /* ValidateBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15395233BC2CD0072319A /* ValidateBinarySearchTree.swift */; };
-		CBD15398233BCFEA0072319A /* Int?+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15397233BCFEA0072319A /* Int?+Operator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +46,7 @@
 		725B7FBE233619AF0065A269 /* MergeKSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeKSortedLists.swift; sourceTree = "<group>"; };
 		7270DEBD233B44B000DEEF0C /* RemoveDuplicatesFromSortedList2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedList2.swift; sourceTree = "<group>"; };
 		7270DEC0233B4C1100DEEF0C /* MiddleOfTheLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleOfTheLinkedList.swift; sourceTree = "<group>"; };
+		727554392448D56B00E3595A /* PalindromeLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeLinkedList.swift; sourceTree = "<group>"; };
 		729EBD64233231300078770D /* ReverseLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseLinkedList.swift; sourceTree = "<group>"; };
 		729EBD672333709F0078770D /* InkedListCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkedListCycle.swift; sourceTree = "<group>"; };
 		CB16D0E922D246C400997428 /* 数据结构与算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "数据结构与算法"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +115,14 @@
 			path = "链表的中间节点";
 			sourceTree = "<group>";
 		};
+		727554382448D54400E3595A /* 回文链表 */ = {
+			isa = PBXGroup;
+			children = (
+				727554392448D56B00E3595A /* PalindromeLinkedList.swift */,
+			);
+			path = "回文链表";
+			sourceTree = "<group>";
+		};
 		729EBD63233230E60078770D /* 反转链表 */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +187,7 @@
 		CBC32420232FE719005D64D6 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				727554382448D54400E3595A /* 回文链表 */,
 				CBD15394233BC2A20072319A /* 验证二叉搜索树 */,
 				7270DEBF233B4BE500DEEF0C /* 链表的中间节点 */,
 				7270DEBC233B448000DEEF0C /* 删除排序链表中的重复元素② */,
@@ -329,13 +339,13 @@
 				729EBD65233231300078770D /* ReverseLinkedList.swift in Sources */,
 				7270DEBE233B44B000DEEF0C /* RemoveDuplicatesFromSortedList2.swift in Sources */,
 				CBD15393233BC20C0072319A /* TreeNode.swift in Sources */,
+				7275543A2448D56B00E3595A /* PalindromeLinkedList.swift in Sources */,
 				CBC3242C232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift in Sources */,
 				CB16D10C22D4F6E800997428 /* LinkedList.swift in Sources */,
 				CBC3242E232FECC4005D64D6 /* LeetCode.swift in Sources */,
 				CB16D0ED22D246C400997428 /* main.swift in Sources */,
 				CBC324322333E436005D64D6 /* RemoveLinkedListElements.swift in Sources */,
 				722D01C12331CEB40036A55E /* DeleteNodeInALinkedList.swift in Sources */,
-				CBD15398233BCFEA0072319A /* Int?+Operator.swift in Sources */,
 				CB2C0BC3233A7BFA00A79B45 /* RemoveDuplicatesFromSortedList.swift in Sources */,
 				CBC32429232FE8A7005D64D6 /* TwoSum.swift in Sources */,
 				7270DEC1233B4C1100DEEF0C /* MiddleOfTheLinkedList.swift in Sources */,
