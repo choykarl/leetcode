@@ -34,6 +34,10 @@ import Foundation
 
 //MiddleOfTheLinkedList.execute()
 
-ValidateBinarySearchTree.execute()
+//ValidateBinarySearchTree.execute()
 
 //PalindromeLinkedList.execute()
+
+GetKthFromEnd.execute()
+
+//RemoveNthFromEnd.execute()
