@@ -38,6 +38,10 @@ import Foundation
 
 //PalindromeLinkedList.execute()
 
-GetKthFromEnd.execute()
+//GetKthFromEnd.execute()
 
 //RemoveNthFromEnd.execute()
+
+//ValidParentheses.execute()
+
+MinStack.execute()
