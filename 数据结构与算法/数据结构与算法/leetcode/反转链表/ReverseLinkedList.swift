@@ -52,50 +52,40 @@ class ReverseLinkedList: LeetCode {
      通过画图去了解,更加直观和好理解!!!
      
      因为是反转,需要先让原本的head.next指向nil,但又不能让之前的head.next指向的第二个节点没有指针指向,导致断了,就需要创建临时变量先去记住之前的head.next
-     tmpNode1 = tmpHead?.next // 临时指针先指向之前的第二个
-     tmpHead?.next = tmpNode2 // head.next指向nil
+     temp = head?.next // 临时指针先指向之前的第二个
+     head?.next = rtnHead // head.next指向nil
      
-     因为每次循环tmpNode1都要等于tmpHead?.next,所以tmpHead需要往后走,这样整个循环才能往下走下去.
-     所以tmpHead需要指向第二个节点,也就是现在的tmpNode1
-     但是tmpHead指向第二个节点以后,第一个节点就没指针指向了,也就会断了,这样第二个节点反转的时候就找不到第一个节点了,所以这个时候用tmpNode2先去指向.
-     tmpNode2 = tmpHead // 先记住第一个节点,第二个节点反转的时候能够找到
-     tmpHead = tmpNode1 // tmpHead往后走
+     因为循环条件是head不等于nil,所以head需要往后走,整个循环才能继续下去,
+     所以head需要指向第二个节点,也就是现在的temp
+     但是head指向第二个节点以后,第一个节点就没指针指向了,也就会断了,这样第二个节点反转的时候就找不到第一个节点了,所以这个时候用rtnHead先去指向.
+     rtnHead = head // 先记住第一个节点,第二个节点反转的时候能够找到
+     head = temp // head往后走
      */
-    func reverseList2(_ head: ListNode?) -> ListNode? {
-        if head == nil {return nil}
-        if head!.next == nil {
-            return head
+    func reverseList2(head: ListNode?) -> ListNode? {
+        if head == nil || head?.next == nil {return head}
+        
+        var head = head
+        var temp: ListNode? = nil
+        var rtnHead: ListNode? = nil
+        
+        while head != nil {
+            temp = head?.next
+            head?.next = rtnHead
+            rtnHead = head
+            head = temp
         }
         
-        var tmpHead = head
-        var tmpNode1: ListNode? = nil
-        var tmpNode2: ListNode? = nil
-        
-        while tmpHead != nil {
-            tmpNode1 = tmpHead?.next
-            tmpHead?.next = tmpNode2
-            tmpNode2 = tmpHead
-            tmpHead = tmpNode1
-        }
-        
-        return tmpNode2
+        return rtnHead
     }
     
     func reverseList3(head: ListNode?) -> ListNode? {
-        if head == nil {return nil}
-        if head!.next == nil {
-            return head
-        }
-        var move = head
-        var pre: ListNode?
-        while move != nil {
-            let next = move?.next
-            move?.next = pre
-            pre = move
-            move = next
-        }
+        if head == nil || head?.next == nil {return head}
         
-        return pre
+        let rtn = reverseList3(head: head?.next)
+        head?.next?.next = head
+        head?.next = nil
+        
+        return rtn
     }
     
     static func execute() {
@@ -110,7 +100,7 @@ class ReverseLinkedList: LeetCode {
         
         let ins = ReverseLinkedList()
 //        let result = ins.reverseList2(node)
-        let result = ins.reverseList3(head: node)
+        let result = ins.reverseList3(head: node1)
         print(result!.log())
     }
 }
