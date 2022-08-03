@@ -20,7 +20,7 @@ import Foundation
 
 //DeleteNodeInALinkedList.execute()
 
-ReverseLinkedList.execute()
+//ReverseLinkedList.execute()
 
 //InkedListCycle.execute()
 
@@ -45,3 +45,9 @@ ReverseLinkedList.execute()
 //ValidParentheses.execute()
 
 //MinStack.execute()
+
+//DeleteLinkListAllData.execute()
+
+//OrderlyQueue.execute()
+
+GenerateAStringWithCharactersThatHaveOddCounts.execute()

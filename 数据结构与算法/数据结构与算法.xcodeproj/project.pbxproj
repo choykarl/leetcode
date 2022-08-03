@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62F7540E289912890045AAD5 /* DeleteLinkListAllData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7540D289912890045AAD5 /* DeleteLinkListAllData.swift */; };
+		62F75411289A86EC0045AAD5 /* OrderlyQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F75410289A86EC0045AAD5 /* OrderlyQueue.swift */; };
+		62F75414289A97530045AAD5 /* GenerateAStringWithCharactersThatHaveOddCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F75413289A97530045AAD5 /* GenerateAStringWithCharactersThatHaveOddCounts.swift */; };
+		62F75417289A9AA50045AAD5 /* CircularQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F75416289A9AA50045AAD5 /* CircularQueue.swift */; };
 		722D01BD2331184F0036A55E /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D01BC2331184F0036A55E /* MergeTwoSortedLists.swift */; };
 		722D01C12331CEB40036A55E /* DeleteNodeInALinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D01C02331CEB40036A55E /* DeleteNodeInALinkedList.swift */; };
 		725B7FBF233619AF0065A269 /* MergeKSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725B7FBE233619AF0065A269 /* MergeKSortedLists.swift */; };
@@ -45,6 +49,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		62F7540D289912890045AAD5 /* DeleteLinkListAllData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteLinkListAllData.swift; sourceTree = "<group>"; };
+		62F75410289A86EC0045AAD5 /* OrderlyQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderlyQueue.swift; sourceTree = "<group>"; };
+		62F75413289A97530045AAD5 /* GenerateAStringWithCharactersThatHaveOddCounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateAStringWithCharactersThatHaveOddCounts.swift; sourceTree = "<group>"; };
+		62F75416289A9AA50045AAD5 /* CircularQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularQueue.swift; sourceTree = "<group>"; };
 		722D01BC2331184F0036A55E /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
 		722D01C02331CEB40036A55E /* DeleteNodeInALinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNodeInALinkedList.swift; sourceTree = "<group>"; };
 		725B7FBE233619AF0065A269 /* MergeKSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeKSortedLists.swift; sourceTree = "<group>"; };
@@ -83,6 +91,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62F7540C289911C80045AAD5 /* 删除整个链表 */ = {
+			isa = PBXGroup;
+			children = (
+				62F7540D289912890045AAD5 /* DeleteLinkListAllData.swift */,
+			);
+			path = "删除整个链表";
+			sourceTree = "<group>";
+		};
+		62F7540F289A86D80045AAD5 /* 有序队列 */ = {
+			isa = PBXGroup;
+			children = (
+				62F75410289A86EC0045AAD5 /* OrderlyQueue.swift */,
+			);
+			path = "有序队列";
+			sourceTree = "<group>";
+		};
+		62F75412289A97200045AAD5 /* 生成每种字符都是奇数个的字符串 */ = {
+			isa = PBXGroup;
+			children = (
+				62F75413289A97530045AAD5 /* GenerateAStringWithCharactersThatHaveOddCounts.swift */,
+			);
+			path = "生成每种字符都是奇数个的字符串";
+			sourceTree = "<group>";
+		};
+		62F75415289A9A750045AAD5 /* 循环队列 */ = {
+			isa = PBXGroup;
+			children = (
+				62F75416289A9AA50045AAD5 /* CircularQueue.swift */,
+			);
+			path = "循环队列";
+			sourceTree = "<group>";
+		};
 		722D01BB233118250036A55E /* 合并两个有序链表 */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +267,10 @@
 		CBC32420232FE719005D64D6 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				62F75415289A9A750045AAD5 /* 循环队列 */,
+				62F75412289A97200045AAD5 /* 生成每种字符都是奇数个的字符串 */,
+				62F7540F289A86D80045AAD5 /* 有序队列 */,
+				62F7540C289911C80045AAD5 /* 删除整个链表 */,
 				7275544F244B677300E3595A /* 最小栈 */,
 				7275544C244B606000E3595A /* 有效的括号 */,
 				7275543E244A100600E3595A /* 删除链表中倒数第k个节点 */,
@@ -383,16 +427,20 @@
 				729EBD65233231300078770D /* ReverseLinkedList.swift in Sources */,
 				7275544E244B608300E3595A /* ValidParentheses.swift in Sources */,
 				7270DEBE233B44B000DEEF0C /* RemoveDuplicatesFromSortedList2.swift in Sources */,
+				62F75411289A86EC0045AAD5 /* OrderlyQueue.swift in Sources */,
 				72755440244A101B00E3595A /* RemoveNthFromEnd.swift in Sources */,
 				CBD15393233BC20C0072319A /* TreeNode.swift in Sources */,
 				72755451244B678700E3595A /* MinStack.swift in Sources */,
+				62F7540E289912890045AAD5 /* DeleteLinkListAllData.swift in Sources */,
 				7275543A2448D56B00E3595A /* PalindromeLinkedList.swift in Sources */,
 				CBC3242C232FEC7D005D64D6 /* EvaluateReversePolishNotation.swift in Sources */,
 				CB16D10C22D4F6E800997428 /* LinkedList.swift in Sources */,
 				CBC3242E232FECC4005D64D6 /* LeetCode.swift in Sources */,
+				62F75414289A97530045AAD5 /* GenerateAStringWithCharactersThatHaveOddCounts.swift in Sources */,
 				CB16D0ED22D246C400997428 /* main.swift in Sources */,
 				CBC324322333E436005D64D6 /* RemoveLinkedListElements.swift in Sources */,
 				722D01C12331CEB40036A55E /* DeleteNodeInALinkedList.swift in Sources */,
+				62F75417289A9AA50045AAD5 /* CircularQueue.swift in Sources */,
 				CB2C0BC3233A7BFA00A79B45 /* RemoveDuplicatesFromSortedList.swift in Sources */,
 				CBC32429232FE8A7005D64D6 /* TwoSum.swift in Sources */,
 				7270DEC1233B4C1100DEEF0C /* MiddleOfTheLinkedList.swift in Sources */,
