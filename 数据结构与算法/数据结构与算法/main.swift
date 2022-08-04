@@ -50,4 +50,6 @@ import Foundation
 
 //OrderlyQueue.execute()
 
-GenerateAStringWithCharactersThatHaveOddCounts.execute()
+//GenerateAStringWithCharactersThatHaveOddCounts.execute()
+
+MinimumSubsequenceInNonIncreasingOrder.execute()
