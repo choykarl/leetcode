@@ -52,4 +52,18 @@ import Foundation
 
 //GenerateAStringWithCharactersThatHaveOddCounts.execute()
 
-MinimumSubsequenceInNonIncreasingOrder.execute()
+//MinimumSubsequenceInNonIncreasingOrder.execute()
+
+//StringMatchingInAnArray.execute()
+
+//ExclusiveTimeOfFunctions.execute()
+
+//MinimumValueToGetPositiveStepByStepSum.execute()
+
+//ReformatTheString.execute()
+
+//GroupThePeopleGivenTheGroupSizeTheyBelongTo.execute()
+
+//MaxChunksToMakeSortedii.execute()
+
+MaximumScoreAfterSplittingAString.execute()
