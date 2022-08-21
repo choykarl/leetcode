@@ -10,6 +10,13 @@
 		62ABC2F628A5FA9E00C2A9E3 /* GroupThePeopleGivenTheGroupSizeTheyBelongTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABC2F528A5FA9E00C2A9E3 /* GroupThePeopleGivenTheGroupSizeTheyBelongTo.swift */; };
 		62ABC2F928A7BC7A00C2A9E3 /* MaxChunksToMakeSortedii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABC2F828A7BC7A00C2A9E3 /* MaxChunksToMakeSortedii.swift */; };
 		62ABC2FC28A8EB7E00C2A9E3 /* MaximumScoreAfterSplittingAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABC2FB28A8EB7E00C2A9E3 /* MaximumScoreAfterSplittingAString.swift */; };
+		62ABC2FF28AA094C00C2A9E3 /* DesignCircularDeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABC2FE28AA094B00C2A9E3 /* DesignCircularDeque.swift */; };
+		62ABC30128AA09E600C2A9E3 /* DLinkListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABC30028AA09E600C2A9E3 /* DLinkListNode.swift */; };
+		62ABC30728AB4DAF00C2A9E3 /* DesignAnOrderedStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABC30628AB4DAF00C2A9E3 /* DesignAnOrderedStream.swift */; };
+		62ABC30A28AC8C2F00C2A9E3 /* DeepestLeavesSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABC30928AC8C2F00C2A9E3 /* DeepestLeavesSum.swift */; };
+		62ABC37E28AF313600C2A9E3 /* NumberOfStudentsDoingHomeworkAtAGivenTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABC37D28AF313600C2A9E3 /* NumberOfStudentsDoingHomeworkAtAGivenTime.swift */; };
+		62ABC38128B08B9D00C2A9E3 /* MaximumBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABC38028B08B9D00C2A9E3 /* MaximumBinaryTree.swift */; };
+		62ABC38428B1DB9B00C2A9E3 /* CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABC38328B1DB9B00C2A9E3 /* CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.swift */; };
 		62F7540E289912890045AAD5 /* DeleteLinkListAllData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7540D289912890045AAD5 /* DeleteLinkListAllData.swift */; };
 		62F75411289A86EC0045AAD5 /* OrderlyQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F75410289A86EC0045AAD5 /* OrderlyQueue.swift */; };
 		62F75414289A97530045AAD5 /* GenerateAStringWithCharactersThatHaveOddCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F75413289A97530045AAD5 /* GenerateAStringWithCharactersThatHaveOddCounts.swift */; };
@@ -60,6 +67,13 @@
 		62ABC2F528A5FA9E00C2A9E3 /* GroupThePeopleGivenTheGroupSizeTheyBelongTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupThePeopleGivenTheGroupSizeTheyBelongTo.swift; sourceTree = "<group>"; };
 		62ABC2F828A7BC7A00C2A9E3 /* MaxChunksToMakeSortedii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxChunksToMakeSortedii.swift; sourceTree = "<group>"; };
 		62ABC2FB28A8EB7E00C2A9E3 /* MaximumScoreAfterSplittingAString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumScoreAfterSplittingAString.swift; sourceTree = "<group>"; };
+		62ABC2FE28AA094B00C2A9E3 /* DesignCircularDeque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCircularDeque.swift; sourceTree = "<group>"; };
+		62ABC30028AA09E600C2A9E3 /* DLinkListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLinkListNode.swift; sourceTree = "<group>"; };
+		62ABC30628AB4DAF00C2A9E3 /* DesignAnOrderedStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignAnOrderedStream.swift; sourceTree = "<group>"; };
+		62ABC30928AC8C2F00C2A9E3 /* DeepestLeavesSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepestLeavesSum.swift; sourceTree = "<group>"; };
+		62ABC37D28AF313600C2A9E3 /* NumberOfStudentsDoingHomeworkAtAGivenTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfStudentsDoingHomeworkAtAGivenTime.swift; sourceTree = "<group>"; };
+		62ABC38028B08B9D00C2A9E3 /* MaximumBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumBinaryTree.swift; sourceTree = "<group>"; };
+		62ABC38328B1DB9B00C2A9E3 /* CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.swift; sourceTree = "<group>"; };
 		62F7540D289912890045AAD5 /* DeleteLinkListAllData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteLinkListAllData.swift; sourceTree = "<group>"; };
 		62F75410289A86EC0045AAD5 /* OrderlyQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderlyQueue.swift; sourceTree = "<group>"; };
 		62F75413289A97530045AAD5 /* GenerateAStringWithCharactersThatHaveOddCounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateAStringWithCharactersThatHaveOddCounts.swift; sourceTree = "<group>"; };
@@ -129,6 +143,54 @@
 				62ABC2FB28A8EB7E00C2A9E3 /* MaximumScoreAfterSplittingAString.swift */,
 			);
 			path = "分割字符串的最大得分";
+			sourceTree = "<group>";
+		};
+		62ABC2FD28AA093C00C2A9E3 /* 设计循环双端队列 */ = {
+			isa = PBXGroup;
+			children = (
+				62ABC2FE28AA094B00C2A9E3 /* DesignCircularDeque.swift */,
+			);
+			path = "设计循环双端队列";
+			sourceTree = "<group>";
+		};
+		62ABC30528AB4D9600C2A9E3 /* 设计有序流 */ = {
+			isa = PBXGroup;
+			children = (
+				62ABC30628AB4DAF00C2A9E3 /* DesignAnOrderedStream.swift */,
+			);
+			path = "设计有序流";
+			sourceTree = "<group>";
+		};
+		62ABC30828AC8C1D00C2A9E3 /* 层数最深叶子节点的和 */ = {
+			isa = PBXGroup;
+			children = (
+				62ABC30928AC8C2F00C2A9E3 /* DeepestLeavesSum.swift */,
+			);
+			path = "层数最深叶子节点的和";
+			sourceTree = "<group>";
+		};
+		62ABC37C28AF310E00C2A9E3 /* 在既定时间做作业的学生人数 */ = {
+			isa = PBXGroup;
+			children = (
+				62ABC37D28AF313600C2A9E3 /* NumberOfStudentsDoingHomeworkAtAGivenTime.swift */,
+			);
+			path = "在既定时间做作业的学生人数";
+			sourceTree = "<group>";
+		};
+		62ABC37F28B08B8B00C2A9E3 /* 最大二叉树 */ = {
+			isa = PBXGroup;
+			children = (
+				62ABC38028B08B9D00C2A9E3 /* MaximumBinaryTree.swift */,
+			);
+			path = "最大二叉树";
+			sourceTree = "<group>";
+		};
+		62ABC38228B1DB7400C2A9E3 /* 检查单词是否为句中其他单词的前缀 */ = {
+			isa = PBXGroup;
+			children = (
+				62ABC38328B1DB9B00C2A9E3 /* CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.swift */,
+			);
+			path = "检查单词是否为句中其他单词的前缀";
 			sourceTree = "<group>";
 		};
 		62F7540C289911C80045AAD5 /* 删除整个链表 */ = {
@@ -332,6 +394,7 @@
 			children = (
 				CB16D10B22D4F6E800997428 /* LinkedList.swift */,
 				CBD1538F233BC1CA0072319A /* ListNode.swift */,
+				62ABC30028AA09E600C2A9E3 /* DLinkListNode.swift */,
 			);
 			path = "链表";
 			sourceTree = "<group>";
@@ -347,6 +410,12 @@
 		CBC32420232FE719005D64D6 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				62ABC38228B1DB7400C2A9E3 /* 检查单词是否为句中其他单词的前缀 */,
+				62ABC37F28B08B8B00C2A9E3 /* 最大二叉树 */,
+				62ABC37C28AF310E00C2A9E3 /* 在既定时间做作业的学生人数 */,
+				62ABC30828AC8C1D00C2A9E3 /* 层数最深叶子节点的和 */,
+				62ABC30528AB4D9600C2A9E3 /* 设计有序流 */,
+				62ABC2FD28AA093C00C2A9E3 /* 设计循环双端队列 */,
 				62ABC2FA28A8EB6400C2A9E3 /* 分割字符串的最大得分 */,
 				62ABC2F728A7BC3C00C2A9E3 /* 最多能完成排序的块 II */,
 				62ABC2F428A5FA2400C2A9E3 /* 用户分组 */,
@@ -517,8 +586,11 @@
 				62ABC2F928A7BC7A00C2A9E3 /* MaxChunksToMakeSortedii.swift in Sources */,
 				7270DEBE233B44B000DEEF0C /* RemoveDuplicatesFromSortedList2.swift in Sources */,
 				62F75411289A86EC0045AAD5 /* OrderlyQueue.swift in Sources */,
+				62ABC37E28AF313600C2A9E3 /* NumberOfStudentsDoingHomeworkAtAGivenTime.swift in Sources */,
 				62FD5D8328A2533D00FE6599 /* MinimumValueToGetPositiveStepByStepSum.swift in Sources */,
 				62F75420289EAB3B0045AAD5 /* StringMatchingInAnArray.swift in Sources */,
+				62ABC2FF28AA094C00C2A9E3 /* DesignCircularDeque.swift in Sources */,
+				62ABC30A28AC8C2F00C2A9E3 /* DeepestLeavesSum.swift in Sources */,
 				72755440244A101B00E3595A /* RemoveNthFromEnd.swift in Sources */,
 				CBD15393233BC20C0072319A /* TreeNode.swift in Sources */,
 				72755451244B678700E3595A /* MinStack.swift in Sources */,
@@ -533,15 +605,19 @@
 				CB16D0ED22D246C400997428 /* main.swift in Sources */,
 				CBC324322333E436005D64D6 /* RemoveLinkedListElements.swift in Sources */,
 				722D01C12331CEB40036A55E /* DeleteNodeInALinkedList.swift in Sources */,
+				62ABC30128AA09E600C2A9E3 /* DLinkListNode.swift in Sources */,
 				62F75417289A9AA50045AAD5 /* CircularQueue.swift in Sources */,
 				62FD5D8028A11BD000FE6599 /* ExclusiveTimeOfFunctions.swift in Sources */,
 				62ABC2FC28A8EB7E00C2A9E3 /* MaximumScoreAfterSplittingAString.swift in Sources */,
 				CB2C0BC3233A7BFA00A79B45 /* RemoveDuplicatesFromSortedList.swift in Sources */,
 				CBC32429232FE8A7005D64D6 /* TwoSum.swift in Sources */,
+				62ABC38128B08B9D00C2A9E3 /* MaximumBinaryTree.swift in Sources */,
 				7270DEC1233B4C1100DEEF0C /* MiddleOfTheLinkedList.swift in Sources */,
+				62ABC38428B1DB9B00C2A9E3 /* CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.swift in Sources */,
 				CBD15390233BC1CA0072319A /* ListNode.swift in Sources */,
 				722D01BD2331184F0036A55E /* MergeTwoSortedLists.swift in Sources */,
 				725B7FBF233619AF0065A269 /* MergeKSortedLists.swift in Sources */,
+				62ABC30728AB4DAF00C2A9E3 /* DesignAnOrderedStream.swift in Sources */,
 				7275543D244A0AFE00E3595A /* GetKthFromEnd.swift in Sources */,
 				729EBD682333709F0078770D /* InkedListCycle.swift in Sources */,
 				CBD15396233BC2CD0072319A /* ValidateBinarySearchTree.swift in Sources */,

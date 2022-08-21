@@ -14,9 +14,38 @@ class MaximumScoreAfterSplittingAString: LeetCode {
         print(MaximumScoreAfterSplittingAString().maxScore("1111"))
     }
     
+    
+    
+    func maxScore(_ s: String) -> Int {
+        var score = 0
+        let count = s.count
+        if s[0] == "0" {
+            score += 1
+        }
+        
+        for i in 1 ..< count {
+            if s[i] == "1" {
+                score += 1
+            }
+        }
+        
+        var ans = score
+        
+        for i in 1 ..< count - 1 {
+            if s[i] == "0" {
+                score += 1
+            } else {
+                score -= 1
+            }
+            ans = max(ans, score)
+        }
+        return ans
+    }
+    
+    
     /// 遍历字符串,每次遍历都将字符串分为左右两串,分别计算左串0的数量和右串1的数量,然后将两边的结果相加
     /// 取整个遍历结果后的最大值
-    func maxScore(_ s: String) -> Int {
+    func maxScore1(_ s: String) -> Int {
         var result = 0
         for i in 0 ..< s.count - 1 {
             let left = s[0 ... i]

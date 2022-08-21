@@ -66,4 +66,16 @@ import Foundation
 
 //MaxChunksToMakeSortedii.execute()
 
-MaximumScoreAfterSplittingAString.execute()
+//MaximumScoreAfterSplittingAString.execute()
+
+//DesignCircularDeque.execute()
+
+//DesignAnOrderedStream.execute()
+
+//DeepestLeavesSum.execute()
+
+//NumberOfStudentsDoingHomeworkAtAGivenTime.execute()
+
+//MaximumBinaryTree.execute()
+
+CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.execute()

@@ -16,5 +16,9 @@ public class TreeNode {
         self.left = nil
         self.right = nil
     }
+    
+    var isLeaf: Bool {
+        return left == nil && right == nil
+    }
 }
 
